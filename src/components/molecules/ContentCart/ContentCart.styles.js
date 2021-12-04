@@ -10,6 +10,7 @@ export const Content = styled.div`
     height: 100%;
     z-index: 1;
     color: ${props => props.theme.colors.textPrimary};
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 `
 export const Title = styled.span`
     font-weight: 600;
@@ -26,6 +27,7 @@ export const BackgroundImage = styled.img`
     height: 35vh;
     z-index: 0;
     object-fit: cover;
+    border-radius: 5px;
 `
 export const ContentCartContainer = styled.div`
     margin: 50px;
