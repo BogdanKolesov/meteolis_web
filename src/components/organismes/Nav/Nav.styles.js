@@ -20,6 +20,9 @@ export const NavLinks = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media(${props => props.theme.media.albumTablet}){
+        display: none;
+    }
 `
 
 export const NavLink = styled(Link)`

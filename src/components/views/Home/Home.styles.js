@@ -7,4 +7,6 @@ export const HeroView = styled.section`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background-color: ${props => props.theme.colors.backgroundLight};
+
 `

@@ -7,6 +7,7 @@ export const Theme = {
         textPrimary: '#FFFFFF;',
         textPrimaryDark: '#212121;',
         secondaryText: '#757575;',
+        backgroundLight: '#fbfbfd'
     },
     media: {
         phone: 'max-width: 479px',
