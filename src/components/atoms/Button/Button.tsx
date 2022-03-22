@@ -8,18 +8,20 @@ export enum ButtonSize {
 }
 
 export interface ButtonProps {
-	primary?: boolean;
 	backgroundColor?: string;
 	size?: ButtonSize;
-	label: string;
-	bold?: boolean;
-	onClick?: () => void;
 	color?: string;
 	background?: string;
+	label: string;
+	bold?: boolean;
+	primary?: boolean;
+	secondary?: boolean;
+	onClick?: () => void;
 }
 
 const Button: FC<ButtonProps> = ({
 	primary = false,
+	secondary = false,
 	size = ButtonSize.medium,
 	backgroundColor,
 	label,
@@ -33,7 +35,8 @@ const Button: FC<ButtonProps> = ({
 			size={size}
 			bold={bold}
 			color={color}
-			background={background}>
+			background={background}
+			secondary={secondary}>
 			{label}
 		</StyledButton>
 	);

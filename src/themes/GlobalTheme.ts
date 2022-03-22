@@ -1,6 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalTheme = createGlobalStyle`
+    ///FONTS
+    @font-face {
+        font-family: 'Foo';
+        src: url('/path/to/foo.woff') format('woff');
+        font-style: normal;
+        font-weight: 400;
+        font-display: fallback; /* <- this can be added to each @font-face definition */
+}   
+
     *{
         margin: 0;
         padding: 0;

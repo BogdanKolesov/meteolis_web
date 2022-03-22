@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { primary, secondary } from '../../../themes/constants';
 import { ButtonProps } from './Button';
 
 export const StyledButton = styled.button<ButtonProps>`
@@ -16,7 +17,13 @@ export const StyledButton = styled.button<ButtonProps>`
 	${props =>
 		props.primary &&
 		css`
-			color: ${props => props.color || 'green'};
-			border: 1px solid ${props => props.color || 'green'};
+			color: ${props => props.color || primary};
+			border: 1px solid ${props => props.color || primary};
+		`};
+	${props =>
+		props.secondary &&
+		css`
+			color: ${props => props.color || secondary};
+			border: 1px solid ${props => props.color || secondary};
 		`};
 `;

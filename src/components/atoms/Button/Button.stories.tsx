@@ -23,6 +23,7 @@ Primary.args = {
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+	secondary: true,
 	label: 'Кнопка',
 };
 
