@@ -6,17 +6,17 @@ export const StyledButton = styled.button<ButtonProps>`
 	border: none;
 	font-size: 14px;
 	padding: 5px;
-	font-weight: ${props => (props.bold ? 'bold' : 'normal')}
-		${props =>
-			props.large &&
-			css`
-				padding-left: 20px;
-				padding-right: 20px;
-			`}
-		${props =>
-			props.primary &&
-			css`
-				color: ${props => props.color || 'green'};
-				border: 1px solid ${props => props.color || 'green'};
-			`};
+	font-weight: ${props => (props.bold ? 'bold' : 'normal')};
+	${props =>
+		props.size == 'large' &&
+		css`
+			padding-left: 20px;
+			padding-right: 20px;
+		`}
+	${props =>
+		props.primary &&
+		css`
+			color: ${props => props.color || 'green'};
+			border: 1px solid ${props => props.color || 'green'};
+		`};
 `;

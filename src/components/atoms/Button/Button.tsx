@@ -14,8 +14,8 @@ export interface ButtonProps {
 	label: string;
 	bold?: boolean;
 	onClick?: () => void;
-	color: string;
-	background: string;
+	color?: string;
+	background?: string;
 }
 
 const Button: FC<ButtonProps> = ({
