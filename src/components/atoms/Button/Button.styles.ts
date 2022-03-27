@@ -17,7 +17,7 @@ export const StyledButton = styled.button<ButtonProps>`
 	${props =>
 		props.primary &&
 		css`
-			color: ${props => props.color || primary};
+			color: ${({ color }) => color || primary};
 			border: 1px solid ${props => props.color || primary};
 		`};
 	${props =>

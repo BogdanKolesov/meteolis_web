@@ -19,7 +19,7 @@ const Nav: FC<NavProps> = ({ variant, authorized }: NavProps) => {
 			<NavLogo>Meteolis project</NavLogo>
 			<NavLinks>
 				{navData.map((data, index) => (
-					<a key={index} src={data.link}>
+					<a key={index} href={data.link}>
 						{data.ru}
 					</a>
 				))}

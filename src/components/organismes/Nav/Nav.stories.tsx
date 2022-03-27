@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '.';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { NavVariants } from './Nav';
 
 export default {
 	title: 'Organizmes/Nav',
@@ -17,10 +18,10 @@ Authorized.args = {
 
 export const Light = Template.bind({});
 Authorized.args = {
-	variant: 'light',
+	variant: NavVariants.light,
 };
 
 export const Dark = Template.bind({});
 Authorized.args = {
-	variant: 'dark',
+	variant: NavVariants.dark,
 };
