@@ -3,7 +3,7 @@ import CardItem from '.';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
-	title: 'Molecules/Nav',
+	title: 'Molecules/CardItem',
 	component: CardItem,
 	argTypes: {},
 } as ComponentMeta<typeof CardItem>;
