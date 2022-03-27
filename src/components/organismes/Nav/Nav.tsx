@@ -3,12 +3,17 @@ import { NavLink } from 'react-router-dom';
 import { navData } from '../../../data/navData';
 import { NavContainer, NavLinks, NavLogo } from './Nav.styles';
 
+export enum NavVariants {
+	dark = 'dark',
+	light = 'light',
+}
+
 export interface NavProps {
-	variant?: string;
+	variant?: NavVariants;
 	authorized: boolean;
 }
 
-const Nav: FC<NavProps> = ({ variant = 'light', authorized }: NavProps) => {
+const Nav: FC<NavProps> = ({ variant, authorized }: NavProps) => {
 	return (
 		<NavContainer variant={variant} authorized={authorized}>
 			<NavLogo>Meteolis project</NavLogo>

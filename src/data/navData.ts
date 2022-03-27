@@ -12,17 +12,22 @@ export const navData = [
 	{
 		ru: 'Кодеры/декодеры',
 		en: 'Coders/decoders',
-		link: '/coders-decoders',
+		link: '/codes',
 	},
 	{
 		ru: 'Статьи',
-		en: 'Stories',
-		link: '/stories',
+		en: 'Articles',
+		link: '/articles',
 	},
 	{
 		ru: 'Карта',
 		en: 'Map',
 		link: '/map',
+	},
+	{
+		ru: 'Чат',
+		en: 'Chat',
+		link: '/chat',
 	},
 	{
 		ru: 'Обо мне',
