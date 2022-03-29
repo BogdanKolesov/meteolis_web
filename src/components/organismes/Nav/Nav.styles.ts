@@ -21,7 +21,7 @@ export const NavLinks = styled.div`
 		margin-right: 10px;
 		cursor: pointer;
 		position: relative;
-
+		text-decoration: none;
 		&:after {
 			position: absolute;
 			content: '';
