@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
-import { primary } from '../../../themes/constants';
+import { COLORS } from '../../../themes/constants';
 export const NavContainer = styled.div`
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background-color: ${primary};
+	background-color: ${COLORS.primary};
 	height: 30px;
 	padding: 5px;
 `;

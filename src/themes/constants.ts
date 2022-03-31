@@ -1,12 +1,12 @@
 ///COLORS
-const primary = '#5F7CA3';
-const secondary = '#F07769';
-const accent = '#A3C4F0';
-const col1 = '#DCF08B';
-const col2 = '#97A367';
-const primaryText = '';
-const secondaryText = '';
+export enum COLORS {
+	primary = '#5F7CA3',
+	secondary = '#F07769',
+	accent = '#A3C4F0',
+	col1 = '#DCF08B',
+	col2 = '#97A367',
+	primaryText = '',
+	secondaryText = '',
+}
 
 ///SIZES
-
-export { primary, secondary, accent, col1, col2, primaryText, secondaryText };
