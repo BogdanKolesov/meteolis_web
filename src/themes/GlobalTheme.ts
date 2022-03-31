@@ -3,11 +3,11 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalTheme = createGlobalStyle`
     ///FONTS
     @font-face {
-        font-family: 'Foo';
-        src: url('/path/to/foo.woff') format('woff');
-        font-style: normal;
-        font-weight: 400;
-        font-display: fallback; /* <- this can be added to each @font-face definition */
+        font-family: 'Roboto Regular';
+        src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf');
+        /* font-style: normal;
+        font-weight: 400; */
+        /* font-display: fallback; <- this can be added to each @font-face definition */
 }   
 
     *{
@@ -16,8 +16,8 @@ const GlobalTheme = createGlobalStyle`
         box-sizing: border-box;
     }
     body {
-        overflow-x: hidden
-        font-family: Open-Sans, Helvetica, Sans-Serif;
+        overflow-x: hidden;
+        font-family: 'Roboto Regular', arial, sans-serif;        
     }
 
     //TEXT STYLES
